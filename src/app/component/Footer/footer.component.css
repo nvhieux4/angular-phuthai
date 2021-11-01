@@ -84,7 +84,7 @@ img {
 .block-top-content {
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: end;
 }
 
 .text-block {
@@ -105,17 +105,31 @@ img {
 
 .element-col {
     margin-top: 3%;
+
 }
 
-.block-top-content::before {
+ .block-top-content::before {
     content: '';
     position: absolute;
     width: 1px;
     height: 75px;
     left: 100%;
     background-color: white;
+} 
+
+.block-top-content::before:last-child {
+    content: "";
+    
 }
 
+/* .block-top-content:not(:first-child){
+    content: '';
+    position: absolute;
+    width: 1px;
+    height: 75px;
+    left: 100%;
+    background-color: white;
+} */
 .footer {
     background-color: #2a2a2a;
 }

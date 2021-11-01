@@ -1,0 +1,45 @@
+.slider {
+    margin-bottom: 10px;
+    .container-content {
+        width: 1230px;
+        padding: 0 20px;
+        margin: 0 auto;
+    }
+    .btn-prev,.btn-next {
+        width: 30px;
+        height: 30px;
+        border: 1px solid #000;
+        border-radius: 50%;
+
+        &:hover {
+            background: #f6865b !important;
+            border: #f6865b !important;
+        }
+    }
+    
+
+    .icon-prev {
+        position: absolute;
+        top: 50%;
+        left: 91%;
+        transform: translate(100%, -50%);
+        font-size: 15px;
+
+    }
+
+    .icon-next {
+        position: absolute;
+        top: 50%;
+        right: 93%;
+        transform: translate(100%, -50%);
+        font-size: 15px;
+    }
+    .carousel-control-prev:hover .icon-prev {
+        color: #fff;
+    }
+        
+    
+    .carousel-control-next-icon,.carousel-control-prev-icon {
+        background-image: none !important;
+    }
+}
